@@ -1,0 +1,45 @@
+1. fungsi alokasi memori ada 4, yaitu:
+a. malloc
+mengalokasi memori tanpa mengubah isi memori yang dialokasikan.
+contoh :
+    char *str;
+    /* Initialisasi alokasi memori */
+    str = (char *) malloc(15); 
+
+b. calloc
+mengalokasikan memori dengan mengubah nilai semua memori yang dialokasikan ke nol
+contoh:
+    int *a;
+    a = (int*)calloc(n, sizeof(int));
+
+c. realloc
+mengubah ukuran memori yang dialokasikan fungsi malloc dan calloc.
+contoh:
+   char *str;
+ 
+   /* Inisialisasi alokasi memori */
+   str = (char *) malloc(15);
+ 
+   /* Re-alokasi memori */
+   str = (char *) realloc(str, 35);
+
+d. free
+membatalkan memori yang dialokasikan oleh fungsi malloc, calloc dan realloc.
+bentuknya : 
+   free(str);
+
+2. pointer to function merupakan pointer yang menunjuk kepada suatu fungsi.
+contoh:
+#include
+int a = 15, b = 0;
+
+int sum(int y)
+{
+return y* = y;
+}
+
+int main()
+{
+b = sum(a);
+printf("%d", b);
+}

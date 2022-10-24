@@ -1,0 +1,58 @@
+#include<stdio.h>
+
+int main(){
+	int T, N;
+	char S[1001]; //array 0 - 1000
+	
+	do{
+		//printf("input T:");
+		scanf(" %d", &T);
+	}while(T<=0 || T>10);
+	
+	
+	for(int i=1;i<=T;i++){
+		do{
+			//printf("input N:");
+			scanf(" %d", &N);
+		}while(N<=0 || N>100);
+		
+		getchar(); 
+		gets(S);
+		
+		printf("Case #%d:\n", i);	
+		for(int j=0;j<N;j++){		
+			printf("%s\n", S);						
+		}
+		
+		/*
+			
+		scanf(" %[^\n]",&S);
+		printf("%s\n", S);
+		scanf(" %[^\n]",&S);
+		printf("%s\n", S);
+	*/	
+	}
+	
+	
+	int c=1;
+	while(c<=T){
+		
+		do{
+			//printf("input N:");
+			scanf(" %d", &N);
+		}while(N<=0 || N>100);
+		getchar(); 
+		gets(S);
+		
+		printf("Case #%d:\n", c);	
+		for(int j=0;j<N;j++){		
+			printf("%s\n", S);						
+		}
+		
+		c++;
+	}
+	
+	//printf("%d\n", T);
+	
+	return 0;
+}

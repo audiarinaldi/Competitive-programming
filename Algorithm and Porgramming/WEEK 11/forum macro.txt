@@ -1,0 +1,23 @@
+1. contoh macro
+#include <stdio.h>
+
+#define macro_sum(x,y) (x+y)
+
+int func_sum(x,y) {
+    return x+y;
+}
+
+int main(void) {
+    printf("%d\n", macro_sum(2,3));
+    printf("%d\n", func_sum(2,3));
+    return 0;
+}
+
+2. a. automatic (keyword auto)
+      Variabel otomatis adalah variable yang hanya dikenal di dalam suatu blok saja (dalam tanda {…}), baik itu blok pemilihan, pengulangan ataupun fungsi
+   b. static (keyword static)
+      Variabel statis adalah suatu variable yang menyimpan nilai permanen dalam memori, artinya variable tersebut akan menyimpan nilai terakhir yang diberikan
+   c. external (keyword external)
+      Mengakses variabel di file berbeda.
+   d. register (keyword register)
+      Untuk mempercepat eksekusi program.

@@ -1,0 +1,20 @@
+Algoritma adalah metode efektif yang diekspresikan sebagai rangkaian terbatas. 
+Algoritma juga merupakan kumpulan perintah untuk menyelesaikan suatu masalah. 
+Perintah – perintah ini dapat diterjemahkan secara bertahap dari awal hingga akhir.
+Algoritma dapat dipresentasikan melalui flowchart dan pseudocode.
+
+BEGIN
+	READ harga_beli
+	READ harga_jual
+	selisih = harga_jual - harga_beli
+	If selisih > 0 THEN
+		PRINT "Untung"
+		PRINT selisih
+	ELSE IF selisih < 0 THEN
+		PRINT "Rugi "
+		PRINT selisih
+	ELSE 
+		PRINT "Break Even"
+
+	ENDIF
+END
